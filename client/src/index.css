@@ -69,6 +69,7 @@ a {
   font-weight: 700;
   color: var(--primary-color);
   background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -129,7 +130,8 @@ a {
   background-color: #fecaca;
 }
 
-.btn:active, .nav-link:active {
+.btn:active,
+.nav-link:active {
   transform: scale(0.95);
 }
 
@@ -319,5 +321,38 @@ textarea:focus {
   .form-row {
     grid-template-columns: 1fr;
     gap: 0;
+  }
+
+  .navbar-container {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0 1rem;
+  }
+
+  .navbar-links {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 0.5rem;
+  }
+
+  .nav-link,
+  .btn {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.8rem;
+    white-space: nowrap;
+  }
+
+  .container {
+    padding: 1rem;
+  }
+
+  .form-container {
+    padding: 1.5rem;
+  }
+
+  .book-grid {
+    grid-template-columns: 1fr;
   }
 }
