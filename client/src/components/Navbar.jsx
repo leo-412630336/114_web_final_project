@@ -14,7 +14,7 @@ const Navbar = () => {
                 <div className="navbar-links">
                     {user ? (
                         <>
-                            <span style={{ color: 'white', marginRight: '15px', fontWeight: 'bold' }}>
+                            <span className="navbar-user-info" style={{ color: 'var(--text-primary)', marginRight: '15px', fontWeight: 'bold' }}>
                                 {user.username} <span className="badge bg-light text-dark" style={{ marginLeft: '5px', borderRadius: '4px', padding: '2px 6px', fontSize: '0.8em' }}>{user.role.toUpperCase()}</span>
                             </span>
                             <Link to="/" className="nav-link">首頁</Link>
