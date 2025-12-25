@@ -1,6 +1,6 @@
-# 圖書借閱系統 (Book Borrowing System) - Final Project
+# 圖書借閱系統
 
-## 專案主題與目標 (Project Theme & Goals)
+## 專案主題與目標
 
 本專案是一個基於 Web 的**圖書借閱系統**，旨在為學校或小型組織提供一個簡單、高效的圖書管理與借閱平台。
 
@@ -9,11 +9,10 @@
     *   **管理員 (Admin)**：擁有完整的圖書庫存管理權限（新增、編輯、刪除圖書），並可查看所有借閱紀錄。
     *   **學生 (Student)**：可以瀏覽圖書列表，執行「借書」與「還書」操作，從而追蹤個人的閱讀狀況。
 2.  **自動化借還流程**：透過系統化的狀態追蹤（可借閱/已借出），減少人工紀錄的錯誤。
-3.  **現代化使用者體驗**：提供響應式 (Responsive) 的網頁介面，讓使用者在不同裝置上都能輕鬆操作。
 
 ---
 
-## 技術選擇原因 (Technology Choices)
+## 技術選擇原因 
 
 本專案採用 **MERN Stack** (MongoDB, Express, React, Node.js) 作為核心技術架構，選擇原因如下：
 
@@ -59,13 +58,11 @@
 
 ---
 
+
 ## 安裝與執行指引 (Installation & Execution)
 
-我們提供兩種啟動方式，強烈建議使用 **Docker** 以獲得最順暢的體驗。
 
-### 方法一：使用 Docker 快速啟動 (推薦)
-
-此方法會自動建立 MongoDB、後端與前端環境。
+### 方法一：使用 Docker 快速啟動 
 
 1.  開啟終端機，進入 `docker` 目錄：
     ```bash
@@ -75,10 +72,10 @@
     ```bash
     docker-compose up --build
     ```
-3.  等待啟動完成後，開啟瀏覽器：
-    *   **前端網頁**：[http://localhost:5173](http://localhost:5173)
-    *   **後端 API**：[http://localhost:5000](http://localhost:5000)
-
+3.  等待啟動完成後進入mongodb改URL:
+    ```bash
+    mongodb://localhost:27017/book-inventory
+    ```
 
 
 **1. 啟動後端**
